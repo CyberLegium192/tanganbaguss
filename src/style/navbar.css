@@ -1,0 +1,31 @@
+
+  /* Efek garis bawah */
+  .navbar-list::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #22c55e; /* Warna garis bawah */
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+  }
+  
+  .navbar-list:hover::after {
+    width: 100%; /* Garis penuh saat di-hover */
+  }
+  
+  /* Gaya pada tombol toggle (mobile) */
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler:focus {
+    outline: none;
+  }
+  
+.text-poppins{
+  font-style: "Poppins", serif;
+}
