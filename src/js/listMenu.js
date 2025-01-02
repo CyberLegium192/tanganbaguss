@@ -43,15 +43,16 @@ const list = [
 
 
 
-
+// data-aos="fade-up" data-aos-delay=${item.aosDilay}
 const CardService = (item) => {
   return `
-      <div class="relative hover:scale-y-5 onhover w-full border-2 border-[${item.color}] p-4 rounded-lg" data-aos="fade-up" data-aos-delay=${item.aosDilay}>
+      <div class="box-shadow-lg relative onhover w-full border-[3px] border-[${item.color}] p-4 rounded-lg" data-aos="fade-up" data-aos-delay=${item.aosDilay} 
+      >
         <div>
           <div class="h-14 w-14 max-sm:h-10 max-sm:w-10 bg-[${item.color}] flex items-center bg-opacity-90 text-white rounded-lg justify-center absolute -top-8 max-sm:-top-5 mx-auto">
             <i class="${item.icon} text-2xl"></i>
           </div>
-          <h5 class="text-sm font-semibold mt-5 max-sm:mt-3  tracking-wider">${item.title}</h5>
+          <h5 class="text-sm font-semibold mt-5 max-sm:mt-3 tracking-wider">${item.title}</h5>
           <p class="text-sm py-3 font-medium text-gray-500">${item.desc}</p>
         </div>
       </div>

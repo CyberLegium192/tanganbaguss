@@ -20,6 +20,7 @@
   z-index: 1;
 }
 
+
 #hero img:nth-child(1) {
   animation-delay: 0s;
 }
@@ -76,4 +77,49 @@
 
 .btn-get-started:hover {
   background-color: rgb(13, 112, 30);
+}
+
+
+/* LAYANAN ITEM HOVER */
+.onhover{
+  transition: transform 0.5s ease-in-out;
+}
+
+.onhover:hover{
+  transform: translateY(-20px) !important;
+}
+
+/* HOVER ANIMASI GALERY */
+.main-image {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Tambahkan kelas untuk animasi keluar */
+.fade-out {
+  opacity: 0;
+  /* transform: translateX(-20px); */
+}
+
+/* Tambahkan kelas untuk animasi masuk */
+.fade-in {
+  opacity: 1;
+  /* transform: translateX(0); */
+}
+
+
+.box-shadow{
+  box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+}
+.box-shadow-lg{
+  box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 0.06),
+      0px 1px 1px -0.5px rgb(0 0 0 / 0.06),
+      0px 3px 3px -1.5px rgb(0 0 0 / 0.06), 
+      0px 6px 6px -3px rgb(0 0 0 / 0.06),
+      0px 12px 12px -6px rgb(0 0 0 / 0.06),
+      0px 24px 24px -12px rgb(0 0 0 / 0.06);
+}
+.box-shadow-xl{
+  box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
 }
